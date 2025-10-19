@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🐍 Yılan Oyunu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="menu" id="menu">
+    <h1>🐍 Yılan Oyunu</h1>
+    <button id="startBtn">Oyuna Başla</button>
+  </div>
+
+  <div class="scoreboard">
+    Skor: <span id="score">0</span>
+  </div>
+
+  <canvas id="gameCanvas"></canvas>
+
+  <div class="gameover" id="gameOverScreen">
+    <h2>💀 Oyun Bitti</h2>
+    <p>Skorunuz: <span id="finalScore">0</span></p>
+    <button id="restartBtn">Tekrar Oyna</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

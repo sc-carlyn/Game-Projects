@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #1a1a1a, #000000);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#gameCanvas {
+  display: none;
+  background: #111;
+  border: 2px solid #00ff80;
+  box-shadow: 0 0 30px #00ff80;
+  border-radius: 10px;
+}
+
+.menu, .gameover {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 40px 50px;
+  text-align: center;
+  border: 2px solid #00ff80;
+  box-shadow: 0 0 25px #00ff80;
+  border-radius: 15px;
+  color: white;
+}
+
+.menu h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #00ff80;
+}
+
+button {
+  background: #00ff80;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  color: black;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #00cc66;
+  transform: scale(1.05);
+}
+
+.scoreboard {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 1.5rem;
+  color: #00ff80;
+  display: none;
+}
+
+.gameover h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #ff4040;
+}
+
+.gameover p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  #gameCanvas {
+    width: 90vw;
+    height: 90vw;
+  }
+}
